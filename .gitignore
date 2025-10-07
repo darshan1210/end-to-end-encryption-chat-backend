@@ -1,0 +1,179 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env.*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Testing
+coverage/
+.nyc_output/
+*.lcov
+
+# Build output
+dist/
+build/
+out/
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# TLS/SSL Certificates (Don't commit private keys!)
+*.pem
+*.key
+*.crt
+*.cer
+*.p12
+*.pfx
+
+# Database dumps
+*.sql
+*.sqlite
+*.db
+dumps/
+
+# Backup files
+*.backup
+*.bak
+*.tmp
+backups/
+
+# MongoDB data (if running locally)
+data/
+mongodb/
+
+# Redis dumps
+dump.rdb
+appendonly.aof
+
+# PM2
+.pm2/
+pm2.log
+
+# Docker (if you add it later)
+docker-compose.override.yml
+.dockerignore
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Mac files
+.AppleDouble
+.LSOverride
+
+# Windows files
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux files
+*~
+
+# Security & sensitive data
+secrets/
+.secrets/
+credentials/
+private/
+
+# Session data
+sessions/
+
+# User uploads (if applicable)
+uploads/
+public/uploads/
+
+# Cache
+.cache/
+.eslintcache
+.stylelintcache
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variable files
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+# Terraform (if used for infrastructure)
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# Miscellaneous
+*.orig
+*.rej
+.grunt
+
+# Documentation builds
+docs/_build/
+site/
+
+# Compiled source
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Archives
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Application specific
+# Add any app-specific files to ignore below
