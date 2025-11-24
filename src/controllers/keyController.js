@@ -8,12 +8,23 @@ class KeyController {
      * Register device public keys after login
      */
     registerKeys = asyncHandler(async (req, res) => {
-        const result = await keyService.registerDeviceKeys(req.userId, req.body);
+        console.log('req ------------------------------------------------', req, req.userId)
+        // Agar token nahi hai (first time key registration), toh body se userId le lo
+        const currentUserId = req.userId || req.body.userId;
+
+        if (!currentUserId) {
+            return res.status(400).json({
+                success: false,
+                error: 'userId is required'
+            });
+        }
+
+        const result = await keyService.registerDeviceKeys(currentUserId, req.body);
 
         // If this is first time key registration after login, generate tokens
         if (!req.headers.authorization || req.headers.authorization === 'Bearer undefined') {
             const { accessToken, refreshToken } = authService.generateTokens(
-                req.userId,
+                currentUserId,
                 req.body.deviceId
             );
 
